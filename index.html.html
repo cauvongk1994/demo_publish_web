@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Webviet24h</title> 
+        <link rel="shortcut icon" href="images/favicon.png"> 
+        <link rel="stylesheet" type="text/css" href="skins/bootstrap.min.css"><!--thay đối style theo kích thước màn hình-->
+        <link rel="stylesheet" type="text/css" href="skins/animate.css"><!--tạo hiệu ứng làm chậm-->
+		<link rel='stylesheet' type="text/css" href='skins/font-awesome.min.css'><!--tạo icon  font-->
+        <link rel='stylesheet' type="text/css" href='skins/pe-icon-7-stroke.min.css'><!--tạo logo icon-->
+        <link rel="stylesheet" type="text/css" href="skins/owl.carousel.css"><!--tạo slide ảnh-->
+        <link rel="stylesheet" type="text/css" href="skins/glasscase.min.css"><!--zoom ảnh-->
+        <link rel="stylesheet" type="text/css" href="skins/header.css"> 
+        <link rel="stylesheet" type="text/css" href="skins/style.css">
+    </head>
+    <body>
+        <div class="mainwrapper">
+            <header class="vHeader hidden-sm hidden-xs">   
+				<div id="headerTop">
+				
+                <div class="bg-black"></div>
+			    <div class="vHeader__logo">
+					<a href="#"><img src="images/anh_logo.png" alt=" Home" title="Aristino"></a>
+				</div>
+				<nav class="vHeader__top vHeader__top--right">
+					<ul>
+						<li class="search search__open header-search icon-search">
+							<form action="#">
+								<input type="text" placeholder="Tìm kiếm">
+								<button><i class="zmdi-search"></i></button>
+							</form>
+						</li>
+						<li class="icon-account">
+							<a href="#" title="Đăng ký / Đăng nhập" rel="nofollow">
+								<span class="icon"></span>
+							</a>
+						</li>
+						<li class="icon-shoppingbag cart__menu">
+							<div class="cartlinkitems">
+								<a href="#" title="Giỏ hàng" rel="nofollow">
+									<span class="icon"></span>
+									<span class="count">1</span>
+								</a>
+							</div>
+						</li>
+						<li class="icon-hotline">
+							<a href="#" title="Hotline" rel="nofollow">
+								<span class="icon"></span>
+								<span class="text">18006226</span>
+							</a>
+						</li>
+						<li class="icon-email">
+							<a href="#" title="Hỗ trợ" rel="nofollow">
+								<span class="icon"></span>
+								<span class="text">Hỗ trợ</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+				<div class="wp-main-menu"> 
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-collapse" >
+							<ul class="nav navbar-nav navbar-left">
+								<li>
+									<a href="#"><span>Hoa Mới</span></a>
+								</li> 
+								<li class="dropdown mega-dropdown">
+									
+									<a href="#"><span>Hoa Lan</span></a>
+								</li>
+								<li class="dropdown mega-dropdown">
+									
+									<a href="#"><span>Hoa Hồng</span></a>
+								</li> 
+								<li class="dropdown mega-dropdown">
+									
+									<a href="#"><span>Hoa Sự Kiên</span></a>
+								</li> 
+								<li class="dropdown">
+									<a href="#"><span>Hoa Lễ</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Bộ sưu tập Hoa</span></a>
+								</li> 
+								<li class="dropdown">
+									<a href="#"><span>Hoa Sale 50%</span></a>
+								</li>
+							</ul>
+						</div>
+					</nav>  
+				</div>  
+				<div class="overlay"></div>  
+            </header><!-- end header destop -->  
+			<div class="wp-header-mobile hideen-md hidden-lg">
+				<div class="wp-header-mb">
+					<div class="header-mobile">
+						<div class="wp-menu-mobile">
+							<div class="toggle__menu">
+							   <i class="akr-icon_Menu"></i>
+							</div>
+						</div>
+						<div class="wp-logo-mb">
+							<a href="#"><img src="images/tommy-logo.svg" alt=""></a>
+						</div>
+						<div class="wp-cart-mb">
+							<div class="cart-mobile cart__menu">
+								<a href="#"> 
+									<i class="akr-Headericon_Cart"></i>
+									<span>1</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="wp-search-mb">
+						<form action="">
+							<div class="search-mb">
+								<input type="text" name="keyword" id="keyword" class="inpt_search" onkeyup="suggest(this.value)" onchange="get_search(this.value)" placeholder="Nhập từ khóa">  
+								<button type="submit" class="btn">
+									 <i class="fa fa-search"></i>
+								</button>
+							</div>
+							<ul class="resuiltSearch">
+								<li class="page">Tìm trong <a href="/" target="_blank">Hoa Sự kiện</a>
+								</li>
+								<li class="page">Tìm trong <a href="/" target="_blank">Hoa Ngày lễ</a>
+								</li>
+								<li class="page">Tìm trong <a href="/" target="_blank">Hoa Lan</a>
+								</li>
+								<li>
+									<a href="/">
+										<div class="media">
+											<div class="media-left">
+												<img src="images/anh2.jpg" class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading name-prd">Hoa mùa Xuân  ATR22808</h4>
+												<p class="pri-item">6,400,000<sup>₫</sup></p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="/">
+										<div class="media">
+											<div class="media-left">
+												<img src="images/pro2.jpg" class="media-object">
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading name-prd">Hoa Hồng Xuân ATR02808</h4>
+												<p class="pri-item">6,400,000<sup>₫</sup></p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>	 
+						</form>
+					</div>
+				</div> 
+            </div><!-- end header mobile -->
+			<div class="wp-slider-home">
+				<div id="slider-home" class="slide-banner owl-carousel owl-theme">   
+					<div class="item">
+						<img src="images/anh_3.jpg">
+					</div>  
+					<div class="item">
+						<img src="images/anh_4.jpg">
+					</div>
+			    </div>
+			</div>
+			
+            <main id="main-site"> 
+				<div class="container-fluid">
+					<div class="ars-row-id">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<figure class="block-banner-category"> 
+									<a class="link-banner" href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 1" src="images/anh5.jpg">
+											</picture>
+										</div>						
+										<figcaption class="caption_banner">
+											<h2>Hoa Hồng Cánh Sen</h2>		 
+										</figcaption>	
+									</a>		
+								</figure>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<figure class="block-banner-category">
+									<a class="link-banner " href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 2" src="images/anh6.jpg">
+											</picture>
+										</div>
+										<figcaption class="caption_banner">
+											<h2>Hoa Hông Trắng</h2>	 
+										</figcaption>	
+									</a>
+								</figure>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="ars-row-id">
+						<div class="row"> 
+							<div class="col-md-3 col-sm-6">
+								<figure class="block-banner-category">
+									<a class="link-banner " href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 2" src="images/anh7.jpg">
+											</picture>
+										</div>
+										<figcaption class="caption_banner">
+											<h2>Hoa Hồng Trắng</h2>				
+											
+										</figcaption>	
+									</a>
+								</figure>
+							</div> 
+							<div class="col-md-3 col-sm-6">
+								<figure class="block-banner-category">
+									<a class="link-banner " href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 2" src="images/anh8.jpg">
+											</picture>
+										</div>
+										<figcaption class="caption_banner">
+											<h2>Hoa Hống Sella</h2>				
+											
+										</figcaption>	
+									</a>
+								</figure>
+							</div> 
+							<div class="col-md-3 col-sm-6">
+								<figure class="block-banner-category">
+									<a class="link-banner " href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 2" src="images/anh9.jpg">
+											</picture>
+										</div>
+										<figcaption class="caption_banner">
+											<h2>Hoa Khai Trương</h2>				
+											
+										</figcaption>	
+									</a>
+								</figure>
+							</div> 
+							<div class="col-md-3 col-sm-6">
+								<figure class="block-banner-category">
+									<a class="link-banner " href="/">
+										<div class="fg-image fade-box">
+											<picture> 
+												<img class="" alt="Khuyến mãi 2" src="images/anh10.jpg">
+											</picture>
+										</div>
+										<figcaption class="caption_banner">
+											<h2>Hoa Hồng Cánh Vàng</h2>				
+											
+										</figcaption>	
+									</a>
+								</figure>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="col-arrival">
+					<figure class="block-banner-category"> 
+						<a class="link-banner" href="/">
+							<div class="fg-image fade-box">
+								<picture> 
+									<img class="" alt="Khuyến mãi 1" src="images/img-1.jpg">
+								</picture>
+							</div>						
+							<figcaption class="caption_banner">
+								<h2>BỘ SƯU TẬP MÙA ĐÔNG</h2>		
+								
+							</figcaption>	
+						</a>		
+					</figure>
+				</div>
+				<div class="container-fluid"> 
+				    <h3 class="h3-title-spcl">Hoa phẩm mới về</h3>
+					<div id="slider-spcl" class="owl-carousel owl-theme">  		 
+							<div class="wp-item-sp"> 
+								<div class="wp-img-sp"> 
+							        <span class="tag-badge sale">-10%</span>
+									<a href="#">
+									     <img src="images/h1.jpg" alt="">
+									     <img class="secondary-image" alt="" src="images/h2.jpg">
+									</a> 										
+									<div class="actions-btn">
+										<a href="#"><i class="pe-7s-cart"></i>Thêm vào giỏ</a>
+									</div> 
+								</div>
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+											<span class="bt">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+							<div class="wp-item-sp"> 
+								<div class="wp-img-sp">
+								    <span class="tag-badge new">Mới</span>
+									<a href="#">
+									    <img src="images/h2.jpg" alt="">
+									    <img class="secondary-image" alt="" src="images/h3.jpg">
+									</a>
+                                    <div class="actions-btn">
+										<a href="#"><i class="pe-7s-cart"></i> Thêm vào giỏ</a>
+									</div>									
+								</div> 
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa Hồng ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+										    <span class="ins">500,000 đ</span>
+											<span class="del">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+							<div class="wp-item-sp">
+								<div class="wp-img-sp">
+								    <span class="tag-badge sale">-10%</span>
+									<a href="#">
+									    <img src="images/h4.jpg" alt="">
+									    <img class="secondary-image" alt="" src="images/h3.jpg">
+									</a>
+                                    <div class="actions-btn">
+										<a href="#"><i class="pe-7s-cart"></i> Thêm vào giỏ</a>
+									</div>									
+								</div> 
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa Cảnh ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+											<span class="bt">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+							<div class="wp-item-sp">
+								<div class="wp-img-sp">
+									<a href="#"><img src="images/h5.jpg" alt=""></a>
+								</div>
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa Để Bàn ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+											<span class="bt">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+							<div class="wp-item-sp">
+								<div class="wp-img-sp">
+									<a href="#"><img src="images/h3.jpg" alt=""></a>
+								</div>
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa Quỳnh ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+											<span class="bt">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+							<div class="wp-item-sp">
+								<div class="wp-img-sp">
+									<a href="#"><img src="images/h6.jpg" alt=""></a>
+								</div>
+								<div class="wp-text-sp"> 
+									<h3 class="h3-title"><a href="#">Hoa Khai Trương ATR02808</a></h3>  
+									<div class="wp-price"> 
+										<div class="price"> 
+											<span class="bt">600,000 đ</span>
+										</div>
+									</div>  
+								</div>
+							</div>
+						</div><!-- end -->  
+				</div>
+			 
+				<div class="media-img ars-row-id">
+					<a href="#">
+						<figure class="figure">
+							<img src="images/top1.jpg" alt="">
+					   </figure> 
+					</a>
+				</div>
+				
+				<div class="featured-posts">
+					 <div class="container">
+						<div class="featured-posts-title">
+							 <h2>Tin tức</h2>
+						</div> 
+						<div class="row"> 
+						<article class="module-widget col-md-4 col-sm-6">
+							<div class="content-view">
+								<div class="article-thumb">
+									<figure><a href="#"><img title="" src="images/new1.jpg" alt=""></a></figure>
+								</div> 
+								<div class="article-content"> 
+								   <h3 class="text-2line inverse"><a href="#" title="">Hàng nghìn khách hàng đã tham gia ARISTINO SUMMER SALE 2019</a></h3>
+								   <p class="article-date">19/4/2016 | 12:06 GMT+7</p>
+								   <a href="#" title="" class="g-button ">Xem thêm</a>
+								</div>
+							</div>    
+						</article>
+						<article class="module-widget col-md-4 col-sm-6">
+							<div class="content-view">
+								<div class="article-thumb">
+									<figure><a href="#"><img title="" src="images/new2.jpg" alt=""></a></figure>
+								</div> 
+								<div class="article-content"> 
+								   <h3 class="text-2line inverse"><a href="#" title="">DANH SÁCH SHOWROOM ÁP DỤNG CHƯƠNG TRÌNH TRI ÂN KHÁCH HÀNG</a></h3> 
+								   <p class="article-date">19/4/2016 | 12:06 GMT+7</p>
+								   <a href="#" title="" class="g-button ">Xem thêm</a>
+								 </div>
+							</div>    
+						</article>
+						<article class="module-widget col-md-4 col-sm-6">
+							<div class="content-view">
+								<div class="article-thumb">
+									<figure><a href="#"><img title="" src="images/new3.jpg" alt=""></a></figure>
+								</div> 
+								<div class="article-content"> 
+								   <h3 class="text-2line inverse"><a href="#" title="">ARISTINO KHAI TRƯƠNG SHOWROOM VĨNH PHÚC, GIẢM GIÁ TỚI 50%</a></h3>
+								   <p class="article-date">19/4/2016 | 12:06 GMT+7</p>
+								   <a href="#" title="" class="g-button ">Xem thêm</a>
+								</div>
+							</div>    
+						</article>
+						</div>
+					</div>	
+				</div>
+			 
+            </main>
+            <!-- end main -->
+            <footer>
+			    <div class="vFooter__newsletter">
+					<label class="VNewsletter-label">
+					     THeo dõi bản tin của chúng tôi
+					</label>
+					<div class="VNewsletter__wrapper">
+						<input class="input-email" required="" name="" placeholder="Email Address" type="email" value="">
+						<button type="submit" href="#" class="VNewsletter__wrapper--button"  aria-label="Đăng ký">
+							<span class="text">Đăng ký</span>
+						</button> 
+					</div>
+				</div>
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="row"> 
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <h3 class="h3-heading">Về chúng tôi</h3>
+                                <div class="bg-ft">
+                                    <ul class="ul-b list-mn">
+                                        <li><a href="#" rel="nofollow">Giới thiệu</a></li>
+                                        <li><a href="#" rel="nofollow">Tin tức</a></li>
+                                        <li><a href="#" rel="nofollow">Tuyển dụng</a></li>
+                                        <li><a href="#" rel="nofollow">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <h3 class="h3-heading">Chính sách bán hàng</h3>
+                                <div class="bg-ft">
+                                    <ul class="ul-b list-mn">
+                                        <li><a href="#" rel="nofollow">Hướng dẫn mua hàng</a></li>
+                                        <li><a href="#" rel="nofollow">Chính sách giao nhận</a></li>
+                                        <li><a href="#" rel="nofollow">Chính sách đổi trả</a></li>
+                                        <li><a href="#" rel="nofollow">Chính sách bảo mật</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+							 <div class="col-md-3 col-sm-6 col-xs-6">
+                                <h3 class="h3-heading">Tư vấn</h3>
+                                <div class="bg-ft">
+                                    <ul class="ul-b list-mn">
+                                        <li><a href="#" rel="nofollow">Tư vấn phong cách</a></li>
+                                        <li><a href="#" rel="nofollow">Tư vấn chọn size</a></li>
+                                        <li><a href="#" rel="nofollow">Tư vấn sản phẩm</a></li>
+										<li><a href="#" rel="nofollow">Hỏi đáp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <h3 class="h3-heading">Kết nối với chúng tôi</h3>
+                                <div class="bg-ft">
+                                    <div class="social-footer"> 
+									<a href="" title="Facebook" rel="nofollow"><i class="fa fa-facebook-square"></i></a> 
+									<a href="" title="Twitter" rel="nofollow"><i class="fa fa-twitter"></i></a> 
+									<a href="" title="Instagram" rel="nofollow"><i class="fa fa-instagram"></i></a> 
+									<a href="" title="Pinterest " rel="nofollow"><i class="fa fa-pinterest "></i></a> 
+									<a href="" title="Youtube" rel="nofollow"><i class="fa fa-youtube-play"></i></a> 
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="text-center">Powered by WEBVIET24H.COM Copyright © 2019 ARISTINO. All Rights Reserved </div>
+                    </div>
+                </div>
+            </footer> 
+            <!-- end footer -->
+			
+			<div class="body__overlay"></div>
+			<!-- Start Offset Wrapper -->
+			<div class="offset__wrapper">
+				<!-- Start Search Popap -->
+				<div class="search__area">
+					<div class="container" >
+						<div class="row" >
+							<div class="col-md-12" >
+								<div class="search__inner">
+									<form action="#" method="get">
+										<input placeholder="Nhập từ khóa cần tìm" type="text">
+										<button type="submit"></button>
+									</form>
+									<div class="search__close__btn">
+										<span class="search__close__btn_icon"><i class="pe-7s-close"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Search Popap --> 
+				<!-- Start Cart Panel -->
+				<div class="shopping__cart">
+					<div class="shopping__cart__inner">
+						<div class="offsetmenu__close__btn">
+							<a href="#"><i class="pe-7s-close"></i></a>
+						</div>
+						<div class="shp__cart__wrap scroll">
+							<div class="shp__single__product">
+								<div class="shp__pro__thumb">
+									<a href="#">
+										<img src="images/h5.jpg" alt="product images">
+									</a>
+									<a href="javascript:void(0)" title="Xóa" onclick="" class="odel">Xóa</a>
+								</div>
+								<div class="shp__pro__details">
+									<h2><a href="product-details.html">Hoa ATR02808</a></h2>
+									<p>Màu: Xanh đậm</p>
+									<div class="row">
+										<div class="col-xs-6">
+											<p>Size</p>
+											<p class="form-select">
+												<select>
+													<option value="">XS</option>
+													<option value="">M</option>
+												</select>
+											</p> 
+										</div>
+										<div class="col-xs-6">
+											<p>Số lượng</p>
+											<p class="form-select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</p> 
+										</div>
+									</div>
+									<div class="shp__price"> 
+										<span class="ins">500,000 đ</span>
+										<span class="del">600,000 đ</span>
+									</div>
+								</div> 
+							</div> 
+							<div class="shp__single__product">
+								<div class="shp__pro__thumb">
+									<a href="#">
+										<img src="images/h6.jpg" alt="product images">
+									</a>
+									<a href="javascript:void(0)" title="Xóa" onclick="" class="odel">Xóa</a>
+								</div>
+								<div class="shp__pro__details">
+									<h2><a href="product-details.html">Hoa ATR02808</a></h2>
+									<p>Màu: Xanh tím than</p>
+									<div class="row">
+										<div class="col-xs-6">
+											<p>Size</p>
+											<p class="form-select">
+												<select>
+													<option value="">XS</option>
+													<option value="">M</option>
+												</select>
+											</p> 
+										</div>
+										<div class="col-xs-6">
+											<p>Số lượng</p>
+											<p class="form-select">
+												<select>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</p> 
+										</div>
+									</div>
+									<div class="shp__price">
+										<span class="bt">700,000 đ</span>
+									</div>
+								</div> 
+							</div>
+						</div>
+						<ul class="shoping__total">
+							<li class="subtotal">Tổng tiền:</li>
+							<li class="total__price">1,200,000đ</li>
+						</ul>
+						<ul class="shopping__btn">
+							<li class="shp__checkout"><a href="giohang.html">Thanh toán</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Cart Panel -->
+				<div class="offsetmenu"> 
+					<div class="offsetmenu__inner mobile-main-menu">
+						<div class="offsetmenu__close__btn">
+							<a href="#"><i class="pe-7s-close"></i></a>
+						</div>
+						<div class="drawer-header"> 
+							<div class="drawer-header--auth"> 
+								<div class="_body">Danh mục menu</div>
+							</div> 
+						</div>  
+						<div class="fix-nav-mobie"> 
+							<div class="mobile-navigation">
+								<nav>
+									<ul class="mobile-menu">
+										<li><a href="#">Sản phẩm mới<i class="fa fa-angle-right"></i></a></li>
+										<li><a href="#">Sản phẩm bán chạy<i class="fa fa-angle-right"></i></a></li> 
+										<li class="has-sub-menu"><a href="#">Áo</a>
+											<ul class="dropdown">
+												<li><a href="#">Hoa Lan<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Hoa Sự Kiện<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Hoa Lễ<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Hoa Hồng<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Hoa Xuân<i class="fa fa-angle-right"></i></a></li>
+											</ul>
+										</li>
+										<li class="has-sub-menu"><a href="#">Hoa</a>
+											<ul class="dropdown">
+												<li><a href="#">Tất cả các sản phẩm Hoa<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Quần Lan<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Quần Hông<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Quần Hông Trắng<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Quần Sự kiện<i class="fa fa-angle-right"></i></a></li>
+											</ul>
+										</li>
+										<li class="has-sub-menu"><a href="#">Hoa để bàn</a>
+											<ul class="dropdown">
+												<li><a href="#">Boxer<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Brief<i class="fa fa-angle-right"></i></a></li>
+											</ul>
+										</li>
+										<li class="has-sub-menu"><a href="#">Combo</a>
+											<ul class="dropdown">
+												<li><a href="#">Bộ đồ<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Bộ suit<i class="fa fa-angle-right"></i></a></li>
+											</ul>
+										</li>
+										<li class="has-sub-menu"><a href="#">Phụ kiện</a>
+											<ul class="dropdown">
+												<li><a href="#">Viền Hoa<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">bệ <i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Chậu Hoa<i class="fa fa-angle-right"></i></a></li>
+												<li><a href="#">Giỏ Hoa<i class="fa fa-angle-right"></i></a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div><!-- mobile menu end -->   
+							<ul class="mobile-support">
+								<li><i class="fa fa-newspaper-o"></i><a href="tin-tuc.html">Tin tức</a></li> 
+								<li><i class="fa fa fa-youtube-play"></i> <a href="#">Video</a></li> 
+								<div class="call_hotline">Tư vấn miễn phí: <a href="tel:0903856668"><span><i class="akr-Contact_PhoneCall"></i></span> 0903856668 </a></div>			
+							</ul>
+						</div>
+					</div>
+				</div><!-- End menu mobile -->
+			</div>
+			<!-- End Offset Wrapper -->
+        </div> 
+        <a href="#" class="scrollup">Top</a>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.glasscase.min.js"></script>
+        <script type="text/javascript" src="js/library.js"></script>
+ 
+    </body>
+</html>
