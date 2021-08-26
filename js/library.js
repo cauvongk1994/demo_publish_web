@@ -473,7 +473,7 @@ $('#slider-recenly').owlCarousel({
 $('#slider-spcl').owlCarousel({
     loop:false,
 	autoplay:false,
-    margin:1,
+    margin:15,
     dots:false,
     nav:true,
 	navText: [
